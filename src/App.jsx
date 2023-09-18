@@ -5,7 +5,7 @@ function App() {
   const [items, setItems] = useState([]);
   useEffect(() => {
     axios
-      .get("https://admin-backend-delivery.onrender.com/getUsers")
+      .get("https://worrisome-pocketbook-fish.cyclic.cloud/getUsers")
       .then((items) => setItems(items.data))
       .catch((err) => console.log(err.message));
   }, []);
